@@ -4,3 +4,13 @@
     margin-top: 10px;
     margin-bottom: 10px
 }
+
+.loginBtn:hover {
+    background-color: #198E3F;
+    border: #198E3F;
+}
+
+.loginInp {
+    width: 400px;
+    margin: auto;
+}
