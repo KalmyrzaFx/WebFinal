@@ -16,6 +16,7 @@ export default class DeviceStore {
             {id:7,name:"S22 ultra",price:90000,rating:0,img:"0c15d6b7-8ff4-494a-935a-9c4613673714.jpg",typeId:1,brandId:3}
         ]
         this._selectedType = {}
+        this._selectedBrand = {}
         makeAutoObservable(this)
     }
 
@@ -29,7 +30,10 @@ export default class DeviceStore {
         this._devices = devices
     }
     setSelectedType(type) {
-        this._selectedType(type)
+        this._selectedType = type
+    }
+    setSelectedBrand(brand) {
+        this._selectedBrand = brand
     }
 
     get types() {
@@ -43,5 +47,8 @@ export default class DeviceStore {
     }
     get selectedType() {
         return this._selectedType
+    }
+    get selectedBrand() {
+        return this._selectedBrand
     }
 }

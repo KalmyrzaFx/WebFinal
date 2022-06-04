@@ -14,3 +14,30 @@
     width: 400px;
     margin: auto;
 }
+.deviceDiv {
+    display: flex;
+}
+.deviceDivCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.deviceItem {
+    margin-top: 20px;
+    border-bottom: solid 1px black;
+}
+.deviceDetail {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.itemCard {
+    
+}
